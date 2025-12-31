@@ -126,7 +126,91 @@ html {
     .btn { display: block; width: 80%; margin: 10px auto; padding: 10px 0; }
     .project { width: 90%; margin: 15px auto; padding: 15px; }
     .contact p { font-size: 14px; }
+    .certifications {
+        width: 90%;
+        margin: 15px auto;
+        padding: 15px;
+    }
+    
+    .certifications li {
+        font-size: 13px;
+    }
 }
 
 /* Smooth scroll */
 html { scroll-behavior: smooth; }
+.experience {
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 12px;
+    background: #111;
+}
+
+.experience h4 {
+    color: cyan;
+    margin-bottom: 5px;
+}
+
+.experience .role {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.experience ul {
+    padding-left: 18px;
+}
+
+.experience li {
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 6px;
+}
+
+.certifications {
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 12px;
+    background: #111;
+}
+
+.certifications ul {
+    padding-left: 18px;
+}
+
+.certifications li {
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 8px;
+}
+
+/* Skills Section */
+.skills {
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 12px;
+    background: #111;
+}
+
+.skills h2 {
+    color: cyan;
+    margin-bottom: 15px;
+    text-align: start;
+}
+
+.skills ul {
+    padding-left: 18px;
+}
+
+.skills li {
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
