@@ -7,8 +7,8 @@
 }
 
 body {
-    background: linear-gradient(120deg, #121212, #1E1E1E); /* Dark background */
-    color: #E0E0E0;
+    background: #0A0F1A; /* Dark navy */
+    color: #E0F7FA; /* Light text */
     line-height: 1.6;
 }
 
@@ -16,17 +16,17 @@ body {
 .container {
     max-width: 900px;
     margin: 50px auto;
-    text-align: center; /* Header centered */
+    text-align: center;
     padding: 30px;
-    background: #1B1B2F; /* Darker container */
+    background: #0F1A2B; /* Slightly lighter dark */
     border-radius: 20px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.7);
+    box-shadow: 0 15px 30px rgba(0,255,255,0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .container:hover {
     transform: translateY(-5px);
-    box-shadow: 0 25px 40px rgba(0,0,0,0.8);
+    box-shadow: 0 25px 40px rgba(0,255,255,0.4);
 }
 
 /* ===== Profile Image ===== */
@@ -35,34 +35,35 @@ body {
     height: 160px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #FF6B6B; /* Highlight color */
+    border: 5px solid #00FFFF; /* Cyan Blue */
     margin-bottom: 20px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, border 0.3s ease;
 }
 
 .profile:hover {
     transform: scale(1.1);
+    border-color: #F59E0B; /* Accent amber */
 }
 
 /* ===== Headings ===== */
 h1 {
     font-size: 2.4em;
     margin-bottom: 10px;
-    color: #FF6B6B; /* Main name color */
+    color: #00FFFF; /* Cyan Blue */
     text-align: center;
 }
 
 h3 {
     font-weight: 500;
     margin-bottom: 20px;
-    color: #CCCCCC; /* Subtitle color */
+    color: #B0BEC5; /* Muted text */
     text-align: center;
 }
 
 /* ===== Paragraphs ===== */
 p {
     margin-bottom: 15px;
-    color: #E0E0E0;
+    color: #E0F7FA;
     text-align: left;
 }
 
@@ -73,26 +74,26 @@ p {
     margin: 10px 5px;
     border-radius: 50px;
     text-decoration: none;
-    color: #121212;
-    background: linear-gradient(90deg, #FF6B6B, #FFA07A); /* Gradient buttons */
+    color: #0A0F1A;
+    background: linear-gradient(90deg, #00FFFF, #00BFFF);
     font-weight: 500;
     transition: 0.3s;
 }
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    box-shadow: 0 8px 20px rgba(0,255,255,0.4);
 }
 
 .btn.outline {
     background: none;
-    border: 2px solid #FF6B6B;
-    color: #FF6B6B;
+    border: 2px solid #00FFFF;
+    color: #00FFFF;
 }
 
 .btn.outline:hover {
-    background: linear-gradient(90deg, #FF6B6B, #FFA07A);
-    color: #121212;
+    background: #F59E0B;
+    color: #0A0F1A;
 }
 
 /* ===== Sections ===== */
@@ -100,9 +101,9 @@ p {
     max-width: 900px;
     margin: 50px auto;
     padding: 25px 30px;
-    background: #1E1E2E; /* Dark sections */
+    background: #0F1A2B;
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 25px rgba(0,255,255,0.2);
     transition: transform 0.3s ease;
     text-align: left;
 }
@@ -116,7 +117,7 @@ p {
     list-style-type: disc;
     margin-left: 20px;
     margin-bottom: 20px;
-    text-align: left;
+    color: #E0F7FA;
 }
 
 .skills-icons {
@@ -136,16 +137,17 @@ p {
     width: 70px;
     height: 70px;
     margin-bottom: 8px;
-    filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1); /* For white icons */
 }
 
 .skill-item span {
     display: block;
-    color: #E0E0E0;
+    color: #E0F7FA;
 }
 
 .skill-item:hover {
     transform: scale(1.2);
+    color: #F59E0B; /* Accent amber */
 }
 
 /* ===== Certifications ===== */
@@ -157,8 +159,8 @@ p {
 }
 
 .cert-card {
-    background: linear-gradient(135deg, #FF6B6B, #FFA07A);
-    color: #121212;
+    background: linear-gradient(135deg, #00FFFF, #00BFFF);
+    color: #0A0F1A;
     padding: 20px;
     border-radius: 15px;
     flex: 1 1 300px;
@@ -170,15 +172,15 @@ p {
 
 .cert-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+    box-shadow: 0 10px 25px rgba(0,255,255,0.5);
 }
 
 /* ===== Experience & Projects ===== */
 .experience-box, .project-card {
     margin-bottom: 25px;
     padding: 20px 30px;
-    border-left: 6px solid #FF6B6B;
-    background: #1E1E2E;
+    border-left: 6px solid #00FFFF; /* Cyan Blue */
+    background: #0A0F1A;
     border-radius: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: left;
@@ -186,44 +188,45 @@ p {
 
 .experience-box:hover, .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    box-shadow: 0 10px 25px rgba(0,255,255,0.4);
 }
 
 .experience-box h4, .project-card h4 {
     margin-bottom: 8px;
-    color: #FF6B6B;
+    color: #00FFFF;
 }
 
 .role, .domain {
     font-style: italic;
-    color: #CCCCCC;
+    color: #B0BEC5; /* Muted text */
     margin-bottom: 10px;
 }
 
 /* ===== Contact Section ===== */
 #contact {
-    text-align: center; /* Contact section centered */
+    text-align: center;
 }
 
 .contact-box p {
     margin-bottom: 12px;
     font-weight: 500;
     text-align: center;
+    color: #E0F7FA;
 }
 
 .contact-box a {
-    color: #FF6B6B;
+    color: #00FFFF;
     text-decoration: none;
 }
 
 .contact-box a:hover {
-    color: #FFA07A;
+    color: #F59E0B;
     text-decoration: underline;
 }
 
 /* ===== Contact Form ===== */
 .contact-section h2 {
-    text-align: center; /* Message Me heading centered */
+    text-align: center;
 }
 
 .contact-form {
@@ -232,33 +235,32 @@ p {
     gap: 15px;
     max-width: 500px;
     margin: 20px auto;
-    text-align: center; /* Center form elements */
+    text-align: center;
 }
 
 .contact-form input,
 .contact-form textarea {
     padding: 12px;
-    border: 1px solid #FF6B6B;
+    border: 1px solid #00FFFF;
     border-radius: 12px;
     font-size: 1em;
-    color: #E0E0E0;
-    background: #1E1E2E;
+    color: #E0F7FA;
+    background: #0F1A2B;
     transition: 0.3s;
-    text-align: left;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: #FFA07A;
-    box-shadow: 0 0 8px rgba(255,160,122,0.5);
+    border-color: #F59E0B;
+    box-shadow: 0 0 8px rgba(245,158,11,0.5);
 }
 
 .contact-form button {
     padding: 12px;
     border: none;
-    background: linear-gradient(90deg, #FF6B6B, #FFA07A);
-    color: #121212;
+    background: linear-gradient(90deg, #00FFFF, #00BFFF);
+    color: #0A0F1A;
     font-size: 1em;
     border-radius: 50px;
     cursor: pointer;
@@ -267,7 +269,7 @@ p {
 
 .contact-form button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    box-shadow: 0 8px 20px rgba(0,255,255,0.5);
 }
 
 /* ===== Responsive ===== */
@@ -279,7 +281,7 @@ p {
 
     .experience-box, .project-card {
         border-left: none;
-        border-top: 6px solid #FF6B6B;
+        border-top: 6px solid #00FFFF;
     }
 
     .container, .section {
