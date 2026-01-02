@@ -442,3 +442,26 @@ p {
     text-align: center;
   }
 }
+/* =========================
+   Mobile Fix – Certification Cards
+   ========================= */
+@media (max-width: 768px) {
+
+  .certifications-container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .cert-card {
+    height: auto !important;
+    min-height: unset !important;
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .cert-card h3 {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+}
