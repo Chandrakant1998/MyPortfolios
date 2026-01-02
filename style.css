@@ -310,3 +310,108 @@ p {
     color: #fff;
     font-size: 14px;
 }
+
+/* =========================
+   MOBILE RESPONSIVE FIX
+   ========================= */
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    .profile {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    /* ===== SKILLS ===== */
+    .skills {
+        max-width: 100%;
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .skills ul {
+        padding-left: 16px;
+    }
+
+    .skills li {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    /* ===== ICON GRID (Skills icons / visualization icons) ===== */
+    .icon-grid,
+    .skills-icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 icons per row */
+        gap: 12px;
+        justify-items: center;
+        margin-top: 15px;
+    }
+
+    .icon-grid img,
+    .skills-icons img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* ===== CERTIFICATIONS ===== */
+    .certifications {
+        max-width: 100%;
+        padding: 15px;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+
+    .certifications li {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    /* ===== EXPERIENCE / PROJECTS ===== */
+    .experience,
+    .project {
+        padding: 15px;
+    }
+
+    .experience li,
+    .project li {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+        display: inline-block;
+        width: 100%;
+        margin: 8px 0;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* ===== CONTACT ===== */
+    .contact p {
+        font-size: 13px;
+        word-break: break-word;
+    }
+}
